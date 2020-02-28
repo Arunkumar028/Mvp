@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements Mvp.mainactity {
     @Override
     public void success(List<Responcedetails> responcedetails) {
         progressDialog.dismiss();
-       // Toast.makeText(this, "Succes", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
         custom_adapter = new Custom_adapter(MainActivity.this, responcedetails);
         recyclerView.setAdapter(custom_adapter);
 
